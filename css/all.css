@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------- */
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    line-height: 1.5;
+    /* letter-spacing: 0.5px; */
+
+
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.container {
+    width: 1140px;
+    /* 做rwd時寬改100% */
+    /* width: 100%; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+   text-decoration: none;
+}
+/* ------color------------- */
+.green{
+    color: green;
+}
+.bg-green{
+    background-color: green;
+}
+.red{
+    color: red;
+}
+.bg-red{
+    background-color: red;
+}
+.purple{
+    color: purple;
+}
+.bg-purple{
+    background-color: purple;
+}
+.blue{
+    color: rgb(6, 121, 251);
+}
+.bg-blue{
+    background: rgb(6, 121, 251);
+}
+.bg-blue002856{
+    background: #dde1a5;
+}
+.bg-blue002044{
+    background: #b0bc72;
+}
+.bg-gray{
+    background-color: #f2f2f2;
+}
+.p-textfff{
+    color: #fff;
+}
+.p-text808080{
+    color: #808080;
+}
+.p-text212529{
+    color: #212529;
+}
+.p-text3{
+    color: #333333;
+}
+.p-text4{
+    color: #002856;
+}
+/* --------margin、padding----------- */
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mlr-15{
+ margin: 0 15px;
+}
+.p-48-15{
+    padding:  48px 15px;
+}
+.p-30{
+    padding: 30px;
+}
+.carousel-r{
+    /* position: absolute; */
+    right: -6.5;
+}
+.carousel-l{
+    /* position: absolute; */
+    left: -6.5;
+}
+/* ------------------- */
+
+.homepage{
+    background-image: url(../img/homepage_background.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    width: 120px;
+}
+.myheader{
+    display: flex;
+    justify-content: flex-end;    
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+}
+.headerNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: brown;
+    margin: 0.5em;
+}
+.navMenuIcon{
+    width: 1.25em;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5rem;
+}
+
+.homepageContent{
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 4rem;
+}
+
+
+.homepageContent h5{
+    margin-top: 1rem;
+    color: rgb(63, 40, 40);
+    text-align: center;
+}
+.cardDomain{
+    /* 全部往上移 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -120px;
+    margin-bottom: -105px;
+}
+.cardDomainContent{
+    display: flex;
+    justify-content: center;
+}
+/* @media (min-width: 1200px){
+    .container {
+        max-width: 1140px;}
+} */
+
+.card{
+    background: #fff;
+    border: 0px solid #aaaaaa;
+    padding: 32px;
+    margin: 12px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.3);
+    border-radius: 15px;
+    text-align: center;
+    /* 為了要能使用 flex-grow: 1;*/
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+}
+.cardDomain-p{
+    flex-grow: 1;
+}
+.card:hover{
+    position: relative;
+    cursor: pointer;
+    bottom: 10px;
+}
+.col-lg-3 {
+    /* 讓尺寸在1140和其他時保持比例*/
+    flex: 0 0 25%;
+    /* max-width: 25%;  RWD時要用*/
+}
+.col-lg-9 {
+    /* 讓尺寸在1140和其他時保持比例*/
+    flex: 0 0 75%;
+}
+.rwdImg100 {
+    width: 100px;
+    height: 100px;
+}
+.gameImg255 {
+    width: 255px;
+    height: 255px;
+}
+.footerImg285{
+    width: 285px;
+}
+.partnerships255{
+    width: 255px;
+
+}
+h4{
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+     text-align: center;
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    text-transform: uppercase;
+    /* 全大寫 */
+}
+
+.btn{
+    padding: 0.5rem 2.2rem;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    cursor: pointer;
+    outline:none;
+}
+
+.card button:hover{
+/* 要單獨設定 變亮色*/
+background: rgb(77, 151, 236);
+}
+.btn-hover:hover{    
+background: rgb(77, 151, 236);
+}
+.card button:active{
+/* 要單獨設定 變原色+外框淡線*/
+    border: 1px solid transparent;
+    background: rgb(6, 121, 251);
+}
+
+.card button:focus{
+    /* 要單獨設定 變原色+外框淡線*/
+        border: 1px solid #8a9df1;
+        background: rgb(6, 121, 251);
+    }
+
+.about{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+/* ?????下 */
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+} */
+/* ??????上 */
+
+/* 輪播 */
+
+/* .swiper-slide {
+    border: 1px rgba(255, 255, 255, 0.993) solid;
+  } */
+  
+.swiper-slide > img {
+    width: 350px;
+    height: 200px; 
+    object-fit: cover;
+}
+
+
+.display-flex{
+    display: flex;
+}
+
+h3{
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #002856;
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
+
+h5{
+    font-size: 1.125rem;
+    /* font-weight: 500; */
+    line-height: 1.2;
+}
+
+.swiper-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.swiper-display-ptb{
+    padding: 0.5rem 0rem;
+}
+/* 這裡要增加 html要加 */
+.rwdFlex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.rwdFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    font-size: 2rem;
+}
+.partnerships-DF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.SignUp-DF {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-DF{
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    color: #1b6119;
+    font-size: 12px;
+}
+
+footer a:hover{
+    text-decoration: underline #eff5fc ;
+}
+
+footer h6{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1b6119;
+}
+.Copyright{
+    font-size: 12px;
+    color: #062a53;
+    padding: 10px;
+    text-align: center;
+}
